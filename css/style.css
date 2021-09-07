@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+header{
+    background: transparent;
+    width: 100%;
+    max-width: 1012px;
+    margin: 0 auto;
+}
+
+header a,ul{
+    text-decoration: none;
+    list-style: none;
+}
+.logo-docplanner{
+    height: 33px;
+    width: 268px;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.main-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 33px;
+}
+
+.dropdown{
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    top: 50px;
+}
+
+.main-menu > li {
+    margin: 0 12px;
+}
+.depart-menu{
+    position: relative;
+}
+.depart-menu:hover .dropdown {
+    display: block;
+    background-color: yellow;
+}
