@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
 }
+
+:root{
+    --header-color: #00b39b;
+    --main-nav: #ababab;
+
+}
+
 
 body{
     box-sizing: border-box;
@@ -28,11 +37,29 @@ header a,ul{
     padding: 12px;
 }
 
+
+
+.main-nav {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main-menu{
     list-style: none;
     display: flex;
     align-items: center;
     height: 33px;
+}
+
+.main-menu .active-tab{
+    color: var(--header-color);
+}
+
+.main-menu a{
+    color: var(--main-nav);
+}
+
+.main-menu a:hover{
+    color: var(--header-color);
 }
 
 .dropdown{
@@ -52,5 +79,39 @@ header a,ul{
 }
 .depart-menu:hover .dropdown {
     display: block;
-    background-color: yellow;
+    background-color: transparent;
+}
+
+main, section{
+    display: block;
+}
+
+.top{
+    margin: 2.0625rem auto 3.75rem;
+}
+
+.top h1{
+    text-align: center;
+    color: rgb(0, 179, 155)
+}
+
+.section-inner{
+    max-width: 1012px;
+    padding: 0 20px;
+    position: relative;
+}
+.top-logo{
+    display: block;
+    margin: 0 auto;
+}
+
+img{
+    border: 0;
+}
+
+h1, h2, h3, h4{
+    margin: 1em 0;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.3px;
 }
